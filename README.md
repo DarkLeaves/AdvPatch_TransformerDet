@@ -25,6 +25,6 @@ conda activate adv
 pip install -r requirements.txt
 ```
 
-❗️Installing the `pytorchyolo` (a lib used in T-SEA) in "requirements.txt"  will automatically install  `pytorch`=1.12. 
+❗️Installing the `pytorchyolo` (a lib used in T-SEA, not this repo) in "requirements.txt"  will automatically install  `pytorch`=1.12.
 
-If this version of the torch does not match your GPU, please uninstall the `torch` `torchvision` and install the matching version.
+If this version does not match your GPU, please uninstall the `torch` `torchvision` and install the matching version.
