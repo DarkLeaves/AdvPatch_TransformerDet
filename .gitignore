@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+#----------------
+Lmy/
+runs/
+results/
+data/INRIAPerson/Test
+data/INRIAPerson/Train
+docker/

@@ -1,0 +1,36 @@
+DATA:
+  CLASS_NAME_FILE: 'configs/namefiles/coco80.names'
+  AUGMENT: 0
+
+  TRAIN:
+    IMG_DIR: 'data/INRIAPerson/Train/pos'
+    LAB_DIR:
+
+DETECTOR:
+  NAME: ["def_detr"]
+  INPUT_SIZE: [416, 416]
+  BATCH_SIZE: 4
+  IOU_THRESH: 0.45
+  CONF_THRESH: 0.5
+
+  PERTURB:
+    GATE: null
+#    GATE: 'shakedrop'
+
+ATTACKER:
+  METHOD: "trans-optim"
+  EPSILON: 255
+  MAX_EPOCH: 30
+  ITER_STEP: 1
+  STEP_LR: 0.03
+  ATTACK_CLASS: '0'
+  LOSS_FUNC: "trans_loss"
+  tv_eta: 2.5
+  LR_SCHEDULER: 'plateau'
+
+  PATCH:
+    WIDTH: 300
+    HEIGHT: 300
+    SCALE: 0.2
+    INIT: "gray"
+    TRANSFORM: ['jitter', 'median_pool', 'rotate', 'cutout']
