@@ -181,3 +181,4 @@ results/
 data/INRIAPerson/Test
 data/INRIAPerson/Train
 docker/
+.iead/
