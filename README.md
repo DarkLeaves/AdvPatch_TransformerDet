@@ -6,7 +6,7 @@ Use Transformer-based detectors as source model to generate adversarial patch.
 
 * [X] DeformableDETR
 
-## Available evalate model:
+## Available evaluate model:
 
 * [ ] DETR
 * [ ] DeformableDETR
