@@ -6,6 +6,7 @@ DETECTOR:
   NAME: ['def_detr']
   INPUT_SIZE: [416, 416]
   BATCH_SIZE: 1
+
   CONF_THRESH: 0.5
   IOU_THRESH: 0.45
 
